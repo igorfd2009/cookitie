@@ -21,7 +21,7 @@ class ErrorBoundary extends React.Component<
     console.error('Cookite Error:', error, errorInfo);
   }
 
-  render() {
+  override render() {
     if (this.state.hasError) {
       return (
         <div className="min-h-screen flex items-center justify-center bg-[var(--color-cookite-gray)] p-4">
