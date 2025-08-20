@@ -7,7 +7,6 @@ import { HowItWorks } from './components/HowItWorks';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { StickyMobileCTA } from './components/StickyMobileCTA';
-import { AdminDashboard } from './components/AdminDashboard';
 import { Toaster } from "./components/ui/sonner";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -47,8 +46,6 @@ export default function App() {
       {/* Sticky Mobile CTA */}
       <StickyMobileCTA />
 
-      {/* Admin Dashboard */}
-      <AdminDashboard />
 
       {/* Toast Notifications */}
       <Toaster />
