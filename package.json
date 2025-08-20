@@ -14,7 +14,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --fix",
     "type-check": "tsc --noEmit",
-    "clean": "if exist dist rmdir /s /q dist && if exist node_modules\\.vite rmdir /s /q node_modules\\.vite",
+    "clean": "rimraf dist node_modules/.vite",
     "deploy:build": "npm run clean && npm install && npm run type-check && npm run build",
     "deploy:preview": "npm run deploy:build && npm run preview"
   },
